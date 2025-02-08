@@ -228,6 +228,7 @@ img {
     font-size: 0.9em;
     background: rgba(0, 0, 0, 0.5); /* Optional background for better visibility */
     padding: 5px 10px;
+    font-size: 0.75em;
     border-radius: 5px;
     font-family: "Roboto Mono", monospace;
   }
