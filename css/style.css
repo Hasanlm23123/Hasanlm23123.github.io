@@ -269,7 +269,7 @@ h1 {
 
 .quick-facts {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 14px;
     margin-top: 32px;
 }
@@ -373,7 +373,7 @@ h1 {
 .profile-copy h2 {
     font-size: clamp(1.75rem, 3vw, 2.4rem);
     line-height: 1.05;
-    max-width: 12ch;
+    max-width: 18ch;
 }
 
 .profile-copy p {
@@ -574,6 +574,25 @@ h1 {
 
 .accent-card {
     background: linear-gradient(160deg, rgba(15, 118, 110, 0.08), rgba(229, 122, 68, 0.12), rgba(255, 255, 255, 0.92));
+}
+
+.skill-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.skill-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(18, 38, 58, 0.08);
+    background: rgba(255, 255, 255, 0.84);
+    color: var(--text);
+    font-size: 0.88rem;
+    font-weight: 700;
 }
 
 .strength-list {

@@ -5,14 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Labib Hasan is a Virginia Tech Computer Science junior graduating in Fall 2026. Explore projects, background, and contact information." />
+    content="Labib Hasan is a Virginia Tech Computer Science junior with a Cyber Security minor graduating in December 2026. Explore resume, projects, experience, and contact information." />
   <title>Labib Hasan | Virginia Tech CS Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=20260318a">
+  <link rel="stylesheet" href="/css/style.css?v=20260318b">
 </head>
 
 <body>
@@ -21,8 +21,9 @@
       <a class="brand" href="#home">LH</a>
       <nav class="nav">
         <a href="#work">Work</a>
-        <a href="#about">About</a>
+        <a href="#about">Experience</a>
         <a href="#contact">Contact</a>
+        <a href="/documents/Labib_Hasan_Resume.docx" target="_blank" rel="noreferrer">Resume</a>
       </nav>
     </header>
 
@@ -32,12 +33,15 @@
           <p class="eyebrow">Virginia Tech • Computer Science</p>
           <h1>Labib Hasan is a junior building polished, project-driven software.</h1>
           <p class="hero-text">
-            I am a Virginia Tech Computer Science student graduating in Fall 2026. I use hands-on projects to sharpen
-            problem solving, Python fundamentals, and clean user-facing presentation.
+            I am a Virginia Tech Computer Science major with a Cyber Security minor graduating in December 2026. My
+            background includes software development, QA automation, API validation, and AI-assisted code review across
+            internship and project work.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:Hasanlm23123@gmail.com">Email Me</a>
+            <a class="btn btn-primary" href="/documents/Labib_Hasan_Resume.docx" target="_blank" rel="noreferrer"
+              download>Download Resume</a>
+            <a class="btn btn-secondary" href="mailto:Hasanlm23123@gmail.com">Email Me</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/labib-hasan-970874296" target="_blank"
               rel="noreferrer">LinkedIn</a>
             <a class="btn btn-secondary" href="https://github.com/Hasanlm23123" target="_blank"
@@ -51,11 +55,15 @@
             </article>
             <article class="fact-card">
               <span class="fact-label">Graduation</span>
-              <strong class="fact-value">Fall 2026</strong>
+              <strong class="fact-value">Dec 2026</strong>
             </article>
             <article class="fact-card">
-              <span class="fact-label">Focus</span>
-              <strong class="fact-value">Python + UI</strong>
+              <span class="fact-label">Program</span>
+              <strong class="fact-value">CS + Cyber</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">GPA</span>
+              <strong class="fact-value">3.3 / 4.0</strong>
             </article>
           </div>
         </div>
@@ -67,15 +75,17 @@
               <img src="images/SelfPortrait.png" alt="Portrait of Labib Hasan" class="profile-image">
             </div>
             <div class="profile-copy">
-              <h2>Building consistency through coursework and self-driven projects.</h2>
+              <h2>Software engineering candidate with hands-on experience across delivery, testing, and security-aware development.</h2>
               <p>
-                My portfolio highlights game-based Python builds and communication-focused work that reflects how I
-                learn, iterate, and present technical ideas clearly.
+                Recent experience includes shipping production pages at SavvyTechGirl, reviewing high-volume code
+                submissions at Outlier AI, and building QA automation, API tests, and UI mockups at IDoxSolutions.
               </p>
             </div>
             <div class="profile-meta">
               <span>Phone: <a href="tel:5713184820">571-318-4820</a></span>
               <span>Email: <a href="mailto:Hasanlm23123@gmail.com">Hasanlm23123@gmail.com</a></span>
+              <span>Resume: <a href="/documents/Labib_Hasan_Resume.docx" target="_blank" rel="noreferrer"
+                  download>Download .docx</a></span>
             </div>
           </div>
         </aside>
@@ -84,10 +94,10 @@
       <section class="section panel" id="work">
         <div class="section-heading">
           <p class="section-kicker">Selected Work</p>
-          <h2>Projects that show how I learn by building.</h2>
+          <h2>Projects and production work that show backend depth and ownership.</h2>
           <p>
-            These projects are simple by design, but each one reflects deliberate practice with Python logic, game
-            mechanics, or technical communication.
+            This section is built to stay flexible as new projects are added. For now it highlights stronger work from
+            my current resume across systems, web development, and shipped production pages.
           </p>
         </div>
 
@@ -95,12 +105,14 @@
           <article class="project-card">
             <button class="project-toggle toggle" type="button" aria-expanded="false">
               <div class="project-toggle-copy">
-                <span class="project-title">Python Dodge Game</span>
-                <span class="project-subtitle">2D arcade project focused on movement, timing, and collision logic</span>
+                <span class="project-title">Multithreaded HTTP Server</span>
+                <span class="project-subtitle">Concurrent systems project built in C with JWT authentication and a
+                  Svelte front end</span>
                 <div class="project-tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Gameplay Logic</span>
-                  <span class="tag">2D Project</span>
+                  <span class="tag">C</span>
+                  <span class="tag">JWT</span>
+                  <span class="tag">Svelte</span>
+                  <span class="tag">Systems</span>
                 </div>
               </div>
               <span class="project-arrow" aria-hidden="true"></span>
@@ -108,12 +120,12 @@
             <div class="slidedown">
               <div class="project-body">
                 <p>
-                  Built a small 2D dodge game in Python to practice event loops, player movement, and simple
-                  interaction design. It shows a practical approach to turning core programming concepts into something
-                  visual and playable.
+                  Built a concurrent HTTP server from RFC specification with a bounded 16-thread worker pool,
+                  configurable request timeouts, and HTTP Range streaming for MP4 partial-content delivery. Integrated
+                  JWT authentication with in-memory claim caching and connected a Svelte SPA as the client layer.
                 </p>
-                <a href="https://github.com/Hasanlm23123/PythonDodgeGame" class="project-link" target="_blank"
-                  rel="noreferrer">View Project</a>
+                <a href="https://github.com/Hasanlm23123" class="project-link" target="_blank"
+                  rel="noreferrer">View GitHub</a>
               </div>
             </div>
           </article>
@@ -121,13 +133,14 @@
           <article class="project-card">
             <button class="project-toggle toggle" type="button" aria-expanded="false">
               <div class="project-toggle-copy">
-                <span class="project-title">Palindrome Tutorial Video</span>
-                <span class="project-subtitle">Short walkthrough explaining a Python solution in a clear, teachable
-                  format</span>
+                <span class="project-title">Full-Stack Business Web App</span>
+                <span class="project-subtitle">Jakarta EE application with MySQL, REST endpoints, and AWS EC2
+                  deployment</span>
                 <div class="project-tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Communication</span>
-                  <span class="tag">Tutorial</span>
+                  <span class="tag">Jakarta EE</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">AWS EC2</span>
+                  <span class="tag">REST API</span>
                 </div>
               </div>
               <span class="project-arrow" aria-hidden="true"></span>
@@ -135,12 +148,13 @@
             <div class="slidedown">
               <div class="project-body">
                 <p>
-                  Recorded a concise tutorial on how to think through a palindrome function in Python. It reflects an
-                  ability to explain logic clearly, which matters when collaborating with teammates and presenting
-                  technical work.
+                  Designed a normalized MySQL schema, built 15+ RESTful endpoints, implemented multipart photo upload
+                  with server-side validation, and configured static file serving through Undertow. Deployed the app to
+                  AWS EC2 and created a Gradle/WAR pipeline that reduced deployment from a long manual process to a
+                  single command.
                 </p>
-                <a href="https://youtu.be/msgBGwi-4tk" class="project-link" target="_blank"
-                  rel="noreferrer">Watch Video</a>
+                <a href="https://github.com/Hasanlm23123" class="project-link" target="_blank"
+                  rel="noreferrer">View GitHub</a>
               </div>
             </div>
           </article>
@@ -148,13 +162,14 @@
           <article class="project-card">
             <button class="project-toggle toggle" type="button" aria-expanded="false">
               <div class="project-toggle-copy">
-                <span class="project-title">Python Space Shooter</span>
-                <span class="project-subtitle">Arcade-style build exploring controls, pacing, and simple game
-                  systems</span>
+                <span class="project-title">SavvyTechGirl Web Delivery</span>
+                <span class="project-subtitle">Production internship work spanning page delivery, auth design, and team
+                  process improvements</span>
                 <div class="project-tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Game Systems</span>
-                  <span class="tag">Project Practice</span>
+                  <span class="tag">Production</span>
+                  <span class="tag">Security</span>
+                  <span class="tag">Frontend</span>
+                  <span class="tag">Ownership</span>
                 </div>
               </div>
               <span class="project-arrow" aria-hidden="true"></span>
@@ -162,12 +177,13 @@
             <div class="slidedown">
               <div class="project-body">
                 <p>
-                  Developed a small space shooter in Python to keep improving on structured logic and interactive
-                  behavior. It adds another example of turning code concepts into a full project with a clear user
-                  experience.
+                  Served as the sole developer on three production pages and shipped each in under two weeks with zero
+                  post-launch defects reported. I also identified an unauthenticated route, designed a role-based login
+                  flow before launch, and improved handoff workflow enough to reduce estimated cycle time by roughly 30
+                  percent.
                 </p>
-                <a href="https://github.com/Hasanlm23123/PythonSpaceShooter" class="project-link" target="_blank"
-                  rel="noreferrer">View Project</a>
+                <a href="/documents/Labib_Hasan_Resume.docx" class="project-link" target="_blank" rel="noreferrer"
+                  download>See Resume Details</a>
               </div>
             </div>
           </article>
@@ -176,27 +192,45 @@
 
       <section class="section panel" id="about">
         <div class="section-heading">
-          <p class="section-kicker">About Me</p>
-          <h2>A student portfolio with a clearer professional signal.</h2>
+          <p class="section-kicker">Experience & Skills</p>
+          <h2>Internship experience backed by a practical technical stack.</h2>
         </div>
 
         <div class="about-grid">
           <article class="about-card">
-            <h3>What I am working toward</h3>
+            <h3>Experience Snapshot</h3>
             <p>
-              I am focused on growing into a stronger software engineer through coursework, repeat project practice,
-              and clearer presentation of my work. I want this site to show recruiters more than just a name and a few
-              links. It should show direction, consistency, and care.
+              My experience spans software engineering, QA, UX testing, and AI-focused code review. That range has made
+              me comfortable validating software from the front end to backend APIs while keeping an eye on usability,
+              security, and delivery speed.
             </p>
+            <ul class="strength-list">
+              <li>Software Development Intern at SavvyTechGirl, Summer 2025</li>
+              <li>AI Intern at Outlier AI, June 2024 to January 2025</li>
+              <li>QA and UX internships at IDoxSolutions across 2021 and 2022</li>
+            </ul>
           </article>
 
           <article class="about-card accent-card">
-            <h3>What stands out</h3>
-            <ul class="strength-list">
-              <li>Comfortable learning by building complete small projects</li>
-              <li>Interest in interactive software and clean user experiences</li>
-              <li>Able to communicate technical ideas through demos and walkthroughs</li>
-            </ul>
+            <h3>Technical Stack</h3>
+            <div class="skill-cloud">
+              <span class="skill-chip">Java</span>
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">C</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">TypeScript</span>
+              <span class="skill-chip">SQL</span>
+              <span class="skill-chip">Jakarta EE</span>
+              <span class="skill-chip">React</span>
+              <span class="skill-chip">Svelte</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">AWS EC2</span>
+              <span class="skill-chip">Docker</span>
+              <span class="skill-chip">Postman</span>
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">Azure DevOps</span>
+              <span class="skill-chip">Linux</span>
+            </div>
           </article>
         </div>
       </section>
@@ -206,8 +240,8 @@
           <p class="section-kicker light">Contact</p>
           <h2>Reach out for recruiting conversations, internships, or project opportunities.</h2>
           <p>
-            The fastest way to contact me is by email or LinkedIn. I am also available by phone if you would rather
-            connect directly.
+            Email is the fastest way to reach me. My LinkedIn and hosted resume are also linked below for a quick
+            recruiter handoff.
           </p>
         </div>
 
@@ -216,6 +250,8 @@
           <a class="contact-link" href="tel:5713184820">571-318-4820</a>
           <a class="contact-link" href="https://www.linkedin.com/in/labib-hasan-970874296" target="_blank"
             rel="noreferrer">LinkedIn Profile</a>
+          <a class="contact-link" href="/documents/Labib_Hasan_Resume.docx" target="_blank" rel="noreferrer"
+            download>Resume</a>
         </div>
       </section>
     </main>
@@ -225,7 +261,7 @@
     </footer>
   </div>
 
-  <script src="/js/slider.js?v=20260318a"></script>
+  <script src="/js/slider.js?v=20260318b"></script>
 </body>
 
 </html>
