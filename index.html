@@ -4,73 +4,228 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Add your name below -->
-  <title>Labib Hasan</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description"
+    content="Labib Hasan is a Virginia Tech Computer Science junior graduating in Fall 2026. Explore projects, background, and contact information." />
+  <title>Labib Hasan | Virginia Tech CS Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="main-text-color">
-  <div class="contact-info">
-    <span>Phone: 571-318-4820 | Email: Hasanlm23123@gmail.com</span>
-  </div>
-  <!-- Content container. Everything except footer goes here -->
-  <div class="container">
-    <!-- Image and name container. Put your replacement photo—which you should crop to be square—in the images folder, then change the source attribute to images/yourportraitfilename.jpg. This path says, "Look in the images folder for yourportraitfilename.jpg." Be sure to change the alt text, too. -->
-    <div class="image-container">
-      <img src="images/SelfPortrait.png">
-    </div>
-    <div class="intro">
-    <span class="name"> Hello, I am Labib Hasan</span> a Sophmore at Virginia Tech studying Computer Science.
-    </div>
-    <div class="section-header">
-      <h1>My work</h1>
-    </div>
-    <!-- Replace the # inside of the href="#" with your links. -->
-    <div class="links-container">
-      <div class="button toggle">Python Dodge Game</div>
-      <div class="slidedown">
-        <div class="description">
-          <h2>Small 2D game coded in python</h2>
-          <a href="https://github.com/Hasanlm23123/PythonDodgeGame" class="external-link" target="_blank">Play!</a>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home">LH</a>
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="site-main" id="home">
+      <section class="hero">
+        <div class="hero-copy panel">
+          <p class="eyebrow">Virginia Tech • Computer Science</p>
+          <h1>Labib Hasan is a junior building polished, project-driven software.</h1>
+          <p class="hero-text">
+            I am a Virginia Tech Computer Science student graduating in Fall 2026. I use hands-on projects to sharpen
+            problem solving, Python fundamentals, and clean user-facing presentation.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:Hasanlm23123@gmail.com">Email Me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/labib-hasan-970874296" target="_blank"
+              rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/Hasanlm23123" target="_blank"
+              rel="noreferrer">GitHub</a>
+          </div>
+
+          <div class="quick-facts">
+            <article class="fact-card">
+              <span class="fact-label">Current Status</span>
+              <strong class="fact-value">Junior</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Graduation</span>
+              <strong class="fact-value">Fall 2026</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Focus</span>
+              <strong class="fact-value">Python + UI</strong>
+            </article>
+          </div>
         </div>
-      </div>
 
-      <div class="button toggle">Video</div>
-      <div class="slidedown">
-        <div class="description">
-          <h2>Palindrome Tutorial Python</h2>
-          <p>A short tutorial on coding a palindrome function in python.</p>
-          <a href="https://youtu.be/msgBGwi-4tk" class="external-link" target="_blank">Watch</a>
+        <aside class="profile-card">
+          <div class="profile-card-inner">
+            <p class="profile-badge">Recruiter Snapshot</p>
+            <div class="profile-image-wrap">
+              <img src="images/SelfPortrait.png" alt="Portrait of Labib Hasan" class="profile-image">
+            </div>
+            <div class="profile-copy">
+              <h2>Building consistency through coursework and self-driven projects.</h2>
+              <p>
+                My portfolio highlights game-based Python builds and communication-focused work that reflects how I
+                learn, iterate, and present technical ideas clearly.
+              </p>
+            </div>
+            <div class="profile-meta">
+              <span>Phone: <a href="tel:5713184820">571-318-4820</a></span>
+              <span>Email: <a href="mailto:Hasanlm23123@gmail.com">Hasanlm23123@gmail.com</a></span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section panel" id="work">
+        <div class="section-heading">
+          <p class="section-kicker">Selected Work</p>
+          <h2>Projects that show how I learn by building.</h2>
+          <p>
+            These projects are simple by design, but each one reflects deliberate practice with Python logic, game
+            mechanics, or technical communication.
+          </p>
         </div>
-      </div>
 
-      <div class="button toggle">Python Space Shooter</div>
-      <div class="slidedown">
-        <div class="description">
-          <h2>Small 2D game coded in python</h2>
-          <a href="https://github.com/Hasanlm23123/PythonSpaceShooter" class="external-link" target="_blank">Play!</a>
+        <div class="project-grid">
+          <article class="project-card">
+            <button class="project-toggle toggle" type="button" aria-expanded="false">
+              <div class="project-toggle-copy">
+                <span class="project-title">Python Dodge Game</span>
+                <span class="project-subtitle">2D arcade project focused on movement, timing, and collision logic</span>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Gameplay Logic</span>
+                  <span class="tag">2D Project</span>
+                </div>
+              </div>
+              <span class="project-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="slidedown">
+              <div class="project-body">
+                <p>
+                  Built a small 2D dodge game in Python to practice event loops, player movement, and simple
+                  interaction design. It shows a practical approach to turning core programming concepts into something
+                  visual and playable.
+                </p>
+                <a href="https://github.com/Hasanlm23123/PythonDodgeGame" class="project-link" target="_blank"
+                  rel="noreferrer">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <button class="project-toggle toggle" type="button" aria-expanded="false">
+              <div class="project-toggle-copy">
+                <span class="project-title">Palindrome Tutorial Video</span>
+                <span class="project-subtitle">Short walkthrough explaining a Python solution in a clear, teachable
+                  format</span>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Communication</span>
+                  <span class="tag">Tutorial</span>
+                </div>
+              </div>
+              <span class="project-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="slidedown">
+              <div class="project-body">
+                <p>
+                  Recorded a concise tutorial on how to think through a palindrome function in Python. It reflects an
+                  ability to explain logic clearly, which matters when collaborating with teammates and presenting
+                  technical work.
+                </p>
+                <a href="https://youtu.be/msgBGwi-4tk" class="project-link" target="_blank"
+                  rel="noreferrer">Watch Video</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <button class="project-toggle toggle" type="button" aria-expanded="false">
+              <div class="project-toggle-copy">
+                <span class="project-title">Python Space Shooter</span>
+                <span class="project-subtitle">Arcade-style build exploring controls, pacing, and simple game
+                  systems</span>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Game Systems</span>
+                  <span class="tag">Project Practice</span>
+                </div>
+              </div>
+              <span class="project-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="slidedown">
+              <div class="project-body">
+                <p>
+                  Developed a small space shooter in Python to keep improving on structured logic and interactive
+                  behavior. It adds another example of turning code concepts into a full project with a clear user
+                  experience.
+                </p>
+                <a href="https://github.com/Hasanlm23123/PythonSpaceShooter" class="project-link" target="_blank"
+                  rel="noreferrer">View Project</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Replace # with PDF from Google Docs, or replace the entire section with whatever you want. Or delete it! Or add another section below it!-->
-    <div class="section-header">
-      <h1>About me</h1>
-    </div>
+      <section class="section panel" id="about">
+        <div class="section-heading">
+          <p class="section-kicker">About Me</p>
+          <h2>A student portfolio with a clearer professional signal.</h2>
+        </div>
 
-    <div class="links-container">
-      <a href="https://www.linkedin.com/in/labib-hasan-970874296" class="button" target="_blank">Linkedin</a>
-    </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>What I am working toward</h3>
+            <p>
+              I am focused on growing into a stronger software engineer through coursework, repeat project practice,
+              and clearer presentation of my work. I want this site to show recruiters more than just a name and a few
+              links. It should show direction, consistency, and care.
+            </p>
+          </article>
 
+          <article class="about-card accent-card">
+            <h3>What stands out</h3>
+            <ul class="strength-list">
+              <li>Comfortable learning by building complete small projects</li>
+              <li>Interest in interactive software and clean user experiences</li>
+              <li>Able to communicate technical ideas through demos and walkthroughs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-strip" id="contact">
+        <div class="contact-copy">
+          <p class="section-kicker light">Contact</p>
+          <h2>Reach out for recruiting conversations, internships, or project opportunities.</h2>
+          <p>
+            The fastest way to contact me is by email or LinkedIn. I am also available by phone if you would rather
+            connect directly.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="contact-link contact-link-primary" href="mailto:Hasanlm23123@gmail.com">Hasanlm23123@gmail.com</a>
+          <a class="contact-link" href="tel:5713184820">571-318-4820</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/labib-hasan-970874296" target="_blank"
+            rel="noreferrer">LinkedIn Profile</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Labib Hasan. Built to present a cleaner recruiter-facing portfolio.</p>
+    </footer>
   </div>
-  <div class="footer">
-    <p>© Labib Hasan, 2024. Based on a design by
-    </p>
-  </div>
-  <script type="text/javascript" src="js/slider.js"></script>
+
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
