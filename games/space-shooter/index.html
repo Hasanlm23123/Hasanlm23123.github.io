@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Play Labib Hasan's browser version of the Python Space Shooter." />
+  <meta name="description" content="Play Labib Hasan's browser-playable Python Space Shooter with levels, hull, and power-ups." />
   <title>Python Space Shooter | Labib Hasan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css?v=20260318d">
 </head>
 
 <body>
@@ -32,13 +32,14 @@
       <div class="game-panel game-stage">
         <div class="game-stage-header">
           <p>
-            Play the Space Shooter directly in the browser. Move left and right, fire upward, and survive as long as
-            you can against falling asteroids.
+            Play the Space Shooter directly in the browser. Move left and right, manage your hull, clear asteroid
+            waves, and grab power-ups to hold a longer run.
           </p>
           <div class="stage-meta">
             <span class="meta-pill">Left / Right or A / D</span>
-            <span class="meta-pill">Space to Shoot</span>
-            <span class="meta-pill">Hit Asteroids for Points</span>
+            <span class="meta-pill">Hold Space to Fire</span>
+            <span class="meta-pill">3 Hull Points</span>
+            <span class="meta-pill">Rapid-Fire Power-Up</span>
           </div>
         </div>
 
@@ -50,6 +51,22 @@
           <article class="hud-card">
             <span class="hud-label">Score</span>
             <strong class="hud-value" id="scoreValue">0</strong>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">High Score</span>
+            <strong class="hud-value" id="highScoreValue">0</strong>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Level</span>
+            <strong class="hud-value" id="levelValue">1</strong>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Hull</span>
+            <strong class="hud-value" id="hullValue">3 / 3</strong>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Weapon</span>
+            <strong class="hud-value" id="weaponValue">Standard</strong>
           </article>
           <article class="hud-card">
             <span class="hud-label">Status</span>
@@ -74,20 +91,21 @@
         <p class="eyebrow">How It Works</p>
         <h2>Gameplay Notes</h2>
         <ul class="bullet-list">
-          <li>Move the ship horizontally and avoid incoming asteroids.</li>
-          <li>Each asteroid you hit with a bullet resets and adds one point.</li>
-          <li>If an asteroid touches the ship, the run ends immediately.</li>
+          <li>Move the ship horizontally and hold fire to clear incoming asteroids.</li>
+          <li>Every few points, the run levels up with faster asteroids and additional threats.</li>
+          <li>Your ship can survive multiple hits, with a short recovery window after impact.</li>
+          <li>Rapid-fire pickups temporarily upgrade the ship into a stronger dual-shot weapon.</li>
           <li>Press <code>Enter</code> after a loss to restart from the keyboard.</li>
         </ul>
         <div class="game-note">
-          This project is playable directly from the site, so visitors can try it immediately instead of only reading
-          the code.
+          This version keeps the project approachable while adding progression, survivability, and a stronger
+          arcade-style gameplay loop.
         </div>
       </aside>
     </section>
   </main>
 
-  <script src="./game.js"></script>
+  <script src="./game.js?v=20260318d"></script>
 </body>
 
 </html>

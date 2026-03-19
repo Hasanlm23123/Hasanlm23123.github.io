@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Play Labib Hasan's browser version of the Python Dodge Game." />
+  <meta name="description" content="Play Labib Hasan's browser-playable Python Dodge Game with scaling difficulty and shield pickups." />
   <title>Python Dodge Game | Labib Hasan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css?v=20260318d">
 </head>
 
 <body>
@@ -39,6 +39,7 @@
             <span class="meta-pill">Arrow Keys or WASD</span>
             <span class="meta-pill">Collect Coins</span>
             <span class="meta-pill">Avoid Red Blocks</span>
+            <span class="meta-pill">Shield Pickups</span>
           </div>
         </div>
 
@@ -50,6 +51,18 @@
           <article class="hud-card">
             <span class="hud-label">Score</span>
             <strong class="hud-value" id="scoreValue">0</strong>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">High Score</span>
+            <strong class="hud-value" id="highScoreValue">0</strong>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Level</span>
+            <strong class="hud-value" id="levelValue">1</strong>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Shield</span>
+            <strong class="hud-value" id="shieldValue">Offline</strong>
           </article>
           <article class="hud-card">
             <span class="hud-label">Status</span>
@@ -78,19 +91,20 @@
         <h2>Gameplay Notes</h2>
         <ul class="bullet-list">
           <li>Move the blue player block to collect the gold coins.</li>
-          <li>Every red enemy block that reaches the bottom respawns with a new speed.</li>
-          <li>The game ends immediately when an enemy touches the player.</li>
+          <li>Difficulty increases with score through faster enemies and additional threats.</li>
+          <li>Shield pickups let you survive one collision and keep the run going.</li>
+          <li>The game ends when an enemy touches the player while the shield is offline.</li>
           <li>Press <code>Enter</code> after a loss to restart from the keyboard.</li>
         </ul>
         <div class="game-note">
-          This project is playable directly from the site, so visitors can try it immediately instead of only reading
-          the code.
+          This version adds better progression and recovery mechanics so the project feels more complete without losing
+          its original simplicity.
         </div>
       </aside>
     </section>
   </main>
 
-  <script src="./game.js"></script>
+  <script src="./game.js?v=20260318d"></script>
 </body>
 
 </html>
