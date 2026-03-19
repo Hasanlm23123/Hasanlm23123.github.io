@@ -544,6 +544,12 @@ h1 {
     margin: 0 0 18px;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 .project-link {
     border: 1px solid rgba(18, 38, 58, 0.12);
     background: rgba(255, 255, 255, 0.92);

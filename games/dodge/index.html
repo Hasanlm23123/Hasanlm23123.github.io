@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Play Labib Hasan's browser version of the Python Dodge Game." />
+  <title>Python Dodge Game | Labib Hasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <main class="game-page">
+    <header class="game-topbar">
+      <div>
+        <p class="eyebrow">Playable Project</p>
+        <h1>Python Dodge Game</h1>
+      </div>
+      <div class="topbar-links">
+        <a class="topbar-link" href="/">Back to Portfolio</a>
+        <a class="topbar-link" href="https://github.com/Hasanlm23123/PythonDodgeGame" target="_blank"
+          rel="noreferrer">View Code</a>
+      </div>
+    </header>
+
+    <section class="game-layout">
+      <div class="game-panel game-stage">
+        <div class="game-stage-header">
+          <p>
+            Browser remake of the original <code>pygame</code> project. Collect coins, dodge falling enemies, and keep your score
+            climbing.
+          </p>
+          <div class="stage-meta">
+            <span class="meta-pill">Arrow Keys or WASD</span>
+            <span class="meta-pill">Collect Coins</span>
+            <span class="meta-pill">Avoid Red Blocks</span>
+          </div>
+        </div>
+
+        <div class="canvas-shell">
+          <canvas id="gameCanvas" width="600" height="400" aria-label="Playable Dodge Game"></canvas>
+        </div>
+
+        <div class="hud">
+          <article class="hud-card">
+            <span class="hud-label">Score</span>
+            <strong class="hud-value" id="scoreValue">0</strong>
+          </article>
+          <article class="hud-card">
+            <span class="hud-label">Status</span>
+            <strong class="hud-value" id="statusValue">Running</strong>
+          </article>
+        </div>
+
+        <div class="action-row">
+          <button class="game-button primary" id="restartButton" type="button">Restart Game</button>
+        </div>
+
+        <div class="control-grid" aria-label="Touch controls">
+          <div class="control-row center">
+            <button class="control-btn" data-action="up" type="button">Up</button>
+          </div>
+          <div class="control-row center">
+            <button class="control-btn" data-action="left" type="button">Left</button>
+            <button class="control-btn" data-action="down" type="button">Down</button>
+            <button class="control-btn" data-action="right" type="button">Right</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="game-panel game-info">
+        <p class="eyebrow">How It Works</p>
+        <h2>Gameplay Notes</h2>
+        <ul class="bullet-list">
+          <li>Move the blue player block to collect the gold coins.</li>
+          <li>Every red enemy block that reaches the bottom respawns with a new speed.</li>
+          <li>The game ends immediately when an enemy touches the player.</li>
+          <li>Press <code>Enter</code> after a loss to restart from the keyboard.</li>
+        </ul>
+        <div class="game-note">
+          This live version follows the original Python logic closely, but it runs fully in the browser so recruiters
+          can try it directly from your site.
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="./game.js"></script>
+</body>
+
+</html>
