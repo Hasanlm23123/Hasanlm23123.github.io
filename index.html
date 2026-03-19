@@ -35,17 +35,18 @@
           <p class="hero-text">
             I am a Virginia Tech Computer Science major with a Cyber Security minor graduating in December 2026. My
             background includes software development, QA automation, API validation, and AI-assisted code review across
-            internship and project work.
+            internship and project work. This portfolio leads with a live AI resume analysis product and two
+            browser-playable games that show shipped interaction, not just screenshots.
           </p>
 
           <div class="hero-actions">
+            <a class="btn btn-primary" href="https://rolereadyai-hasanlm23123s-projects.vercel.app/" target="_blank"
+              rel="noreferrer">Live AI Demo</a>
             <a class="btn btn-primary" href="/documents/Labib_Hasan_Resume.docx" target="_blank" rel="noreferrer"
               download>Download Resume</a>
             <a class="btn btn-secondary" href="mailto:Hasanlm23123@gmail.com">Email Me</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/labib-hasan-970874296" target="_blank"
               rel="noreferrer">LinkedIn</a>
-            <a class="btn btn-secondary" href="https://github.com/Hasanlm23123" target="_blank"
-              rel="noreferrer">GitHub</a>
           </div>
 
           <div class="quick-facts">
@@ -64,6 +65,10 @@
             <article class="fact-card">
               <span class="fact-label">GPA</span>
               <strong class="fact-value">3.3 / 4.0</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Featured Demo</span>
+              <strong class="fact-value">RoleReady AI</strong>
             </article>
           </div>
         </div>
@@ -94,10 +99,10 @@
       <section class="section panel" id="work">
         <div class="section-heading">
           <p class="section-kicker">Selected Work</p>
-          <h2>Three live projects that show full-stack execution, gameplay systems, and polished presentation.</h2>
+          <h2>A deployed AI app and two browser-playable games that show full-stack execution and polished presentation.</h2>
           <p>
-            This mix covers an AI-powered recruiting tool and two browser-playable games, with each project focused on
-            shipped interaction instead of static screenshots.
+            The set below covers one recruiter-facing AI product and two interactive game builds, with each project
+            optimized around a real live experience instead of a static mockup.
           </p>
         </div>
 
@@ -106,11 +111,13 @@
             <button class="project-toggle toggle" type="button" aria-expanded="false">
               <div class="project-toggle-copy">
                 <span class="project-title">RoleReady AI</span>
-                <span class="project-subtitle">Groq-powered resume analyzer with recruiter-style output, serverless
-                  processing, and a public live app</span>
+                <span class="project-subtitle">AI Resume &amp; Interview Prep Studio with streamed analysis, PDF
+                  upload, ATS-style keyword gaps, and recruiter-facing output</span>
                 <div class="project-tags">
                   <span class="tag">LLM API</span>
                   <span class="tag">Serverless</span>
+                  <span class="tag">Streaming UX</span>
+                  <span class="tag">PDF Upload</span>
                   <span class="tag">Vercel</span>
                   <span class="tag">Product UX</span>
                 </div>
@@ -120,14 +127,20 @@
             <div class="slidedown">
               <div class="project-body">
                 <p>
-                  Built a full-stack recruiting assistant that takes resume text and a job description, sends the
-                  request through a serverless Groq route, and returns a fit score, rewritten bullets, interview
-                  questions, and a prep plan. It demonstrates API integration, structured response handling, input
-                  validation, and deployment on Vercel.
+                  <strong>Problem solved:</strong> recruiters and candidates can see how well a resume matches a role,
+                  what keywords are missing, and what concrete fixes or interview prep steps to take next.
+                </p>
+                <p>
+                  <strong>Stack:</strong> JavaScript, Groq API, Vercel serverless functions, streamed UI updates, and
+                  server-side PDF parsing for real resume uploads.
+                </p>
+                <p>
+                  <strong>Why it stands out:</strong> the live app loads with a realistic sample analysis by default,
+                  then supports real uploads, live progress feedback, and copy-ready bullet rewrites in one flow.
                 </p>
                 <div class="project-links">
                   <a href="https://rolereadyai-hasanlm23123s-projects.vercel.app/" class="project-link"
-                    target="_blank" rel="noreferrer">Open Live App</a>
+                    target="_blank" rel="noreferrer">Launch Live Demo</a>
                 </div>
               </div>
             </div>
@@ -143,6 +156,7 @@
                   <span class="tag">Gameplay Systems</span>
                   <span class="tag">Collision Logic</span>
                   <span class="tag">Difficulty Scaling</span>
+                  <span class="tag">Power-Ups</span>
                   <span class="tag">Playable</span>
                 </div>
               </div>
@@ -151,9 +165,9 @@
             <div class="slidedown">
               <div class="project-body">
                 <p>
-                  Built a browser-playable survival game around movement, collision detection, score pacing, and
-                  risk-reward power-ups. The project shows event-loop control, game-state management, and the ability
-                  to turn a small idea into a polished interactive demo.
+                  Rebuilt the original Python dodge concept into a browser-playable arcade survival game with movement,
+                  collision detection, score-based pacing, shield pickups, and persistent high-score tracking. It shows
+                  event-loop control, game-state management, and clean moment-to-moment feedback.
                 </p>
                 <div class="project-links">
                   <a href="/games/dodge/" class="project-link">Play Live</a>
@@ -172,6 +186,7 @@
                   <span class="tag">Game Systems</span>
                   <span class="tag">State Management</span>
                   <span class="tag">Power-Ups</span>
+                  <span class="tag">Difficulty Pacing</span>
                   <span class="tag">Playable</span>
                 </div>
               </div>
@@ -180,9 +195,9 @@
             <div class="slidedown">
               <div class="project-body">
                 <p>
-                  Developed a browser-playable shooter with enemy waves, damage states, progression tuning, and
-                  responsive feedback. It is a stronger systems project that highlights pacing, layered mechanics, and
-                  clean player-facing interaction design.
+                  Reworked the original Python shooter into a browser-playable space game with hull management,
+                  progression tuning, rapid-fire pickups, layered asteroid pressure, and responsive damage feedback. It
+                  highlights pacing, layered mechanics, and clean player-facing interaction design.
                 </p>
                 <div class="project-links">
                   <a href="/games/space-shooter/" class="project-link">Play Live</a>
