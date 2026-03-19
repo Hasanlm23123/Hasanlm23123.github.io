@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Labib Hasan is a Virginia Tech computer science student targeting software engineering internships and new-grad roles, with a portfolio centered on deployed full-stack work, playable browser games, resume access, and code links for technical review." />
+    content="Portfolio of Labib Hasan, a Virginia Tech computer science student building full-stack applications, AI tools, and interactive browser projects." />
   <title>Labib Hasan | Software Engineering Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,12 +30,10 @@
       <section class="hero">
         <div class="hero-copy panel">
           <p class="eyebrow">Labib Hasan | Software Engineering Portfolio</p>
-          <h1>Computer science student shipping live, reviewer-friendly software for internships and early-career product roles.</h1>
+          <h1>Virginia Tech computer science student building full-stack, AI, and interactive web projects.</h1>
           <p class="hero-text">
-            I am a Virginia Tech computer science student targeting software engineering internships and new-grad roles.
-            This portfolio leads with deployed work, but it now includes the recruiter essentials too: a resume,
-            GitHub access, clear project notes, and enough implementation detail for an engineer to review the builds
-            seriously.
+            My work spans deployed AI products, browser-based games, and backend-driven applications with an emphasis
+            on clean UI, useful features, and solid implementation.
           </p>
 
           <div class="hero-actions">
@@ -55,8 +53,8 @@
               <strong class="fact-value">CS Student</strong>
             </article>
             <article class="fact-card">
-              <span class="fact-label">Target</span>
-              <strong class="fact-value">SWE Intern + New Grad</strong>
+              <span class="fact-label">School</span>
+              <strong class="fact-value">Virginia Tech</strong>
             </article>
             <article class="fact-card">
               <span class="fact-label">Featured Build</span>
@@ -68,39 +66,26 @@
             </article>
             <article class="fact-card">
               <span class="fact-label">Core Focus</span>
-              <strong class="fact-value">Full Stack + UX</strong>
+              <strong class="fact-value">Full Stack + AI</strong>
             </article>
           </div>
         </div>
 
         <aside class="profile-card">
           <div class="profile-card-inner">
-            <p class="profile-badge">About + Review Guide</p>
+            <div class="profile-image-wrap">
+              <img class="profile-image" src="/images/SelfPortrait.png" alt="Labib Hasan portrait" />
+            </div>
+            <p class="profile-badge">Labib Hasan</p>
             <div class="profile-copy">
-              <h2>Projects first, context included.</h2>
+              <h2>Full-Stack and Product-Focused</h2>
               <p>
-                Open the live demos to see shipped execution, use the code links to inspect implementation, and use
-                the resume link for recruiter handoff. The goal is to make this site useful to both technical reviewers
-                and recruiting screens.
+                Interested in software engineering roles across full-stack development, AI applications, and interactive
+                user experiences.
               </p>
             </div>
-            <div class="profile-signals">
-              <article class="profile-signal">
-                <span class="profile-signal-label">Current Focus</span>
-                <p>Full-stack apps, browser interaction design, serverless APIs, and product-facing user experience.</p>
-              </article>
-              <article class="profile-signal">
-                <span class="profile-signal-label">Best Starting Point</span>
-                <p>Start with RoleReady AI for streaming UI, PDF upload, structured AI output, and deployment on Vercel.</p>
-              </article>
-              <article class="profile-signal">
-                <span class="profile-signal-label">Code Access</span>
-                <p>Every project below includes both a live demo and a GitHub link for faster engineering review.</p>
-              </article>
-            </div>
             <div class="profile-meta">
-              <span>Primary materials: <a href="/documents/Labib_Hasan_Resume_2027.docx" download>Resume</a> and <a
-                  href="https://github.com/Hasanlm23123" target="_blank" rel="noreferrer">GitHub</a></span>
+              <span>Virginia Tech | Computer Science</span>
               <span>Direct contact: <a href="mailto:Hasanlm23123@gmail.com">Hasanlm23123@gmail.com</a></span>
             </div>
           </div>
@@ -110,11 +95,8 @@
       <section class="section panel" id="work">
         <div class="section-heading">
           <p class="section-kicker">Selected Work</p>
-          <h2>Three live projects with demos, code links, and implementation notes that help both recruiters and engineers review the work quickly.</h2>
-          <p>
-            Each card includes what the project solves, what stack it uses, and what challenge or learning mattered most
-            during the build.
-          </p>
+          <h2>Three live projects across AI, browser games, and full-stack product development.</h2>
+          <p>Each project includes a live demo and code link.</p>
         </div>
 
         <div class="project-grid">
@@ -138,32 +120,13 @@
             <div class="slidedown">
               <div class="project-body">
                 <p>
-                  <strong>Problem solved:</strong> candidates and recruiters can quickly see how well a resume matches
-                  a role, which keywords are missing, and what concrete edits or interview prep steps make the biggest difference.
+                  AI resume and interview-prep tool that takes resume input, job descriptions, and uploaded PDFs, then
+                  returns score, keyword gaps, rewritten bullets, and interview prep output.
                 </p>
                 <p>
-                  <strong>Stack:</strong> JavaScript, Groq API, Vercel serverless functions, streamed UI updates, and
-                  server-side PDF parsing for resume upload, job-link ingestion, and exported report generation.
+                  <strong>Built with:</strong> JavaScript, Groq API, Vercel serverless functions, streamed UI updates,
+                  and server-side PDF parsing. The live flow moves from upload to analysis to report generation in one pass.
                 </p>
-                <div class="detail-grid">
-                  <article class="detail-card">
-                    <h4>Architecture Notes</h4>
-                    <ul class="detail-list">
-                      <li>User uploads a PDF or pastes resume content in the browser.</li>
-                      <li>Vercel serverless routes parse input, build prompts, and call Groq server-side.</li>
-                      <li>Structured output and streamed chunks return to the UI for scoring, rewrites, and comparisons.</li>
-                      <li>The client renders recruiter snapshot, fit-score rationale, export, and saved-history flows.</li>
-                    </ul>
-                  </article>
-                  <article class="detail-card">
-                    <h4>Challenges + Learnings</h4>
-                    <ul class="detail-list">
-                      <li>Handled inconsistent PDF extraction and partial model JSON so analysis degrades gracefully.</li>
-                      <li>Tightened prompt structure to reduce vague bullet rewrites and generic gap advice.</li>
-                      <li>Balanced serverless constraints with streamed output so the app still feels immediate to use.</li>
-                    </ul>
-                  </article>
-                </div>
                 <div class="project-links">
                   <a href="https://rolereadyai-hasanlm23123s-projects.vercel.app/" class="project-link"
                     target="_blank" rel="noreferrer">Launch Live Demo</a>
@@ -197,24 +160,7 @@
                   browser without setup. The finished build shows event-loop control, collision handling, pacing, and
                   player feedback in a compact arcade project.
                 </p>
-                <div class="detail-grid">
-                  <article class="detail-card">
-                    <h4>What It Demonstrates</h4>
-                    <ul class="detail-list">
-                      <li>Keyboard input, movement constraints, and clean collision handling.</li>
-                      <li>Score-based difficulty tuning and shield pickup logic.</li>
-                      <li>Persistent high-score storage for a complete browser gameplay loop.</li>
-                    </ul>
-                  </article>
-                  <article class="detail-card">
-                    <h4>Challenges + Learnings</h4>
-                    <ul class="detail-list">
-                      <li>Translated a desktop-style prototype into browser code without losing the original pacing.</li>
-                      <li>Tuned obstacle speed and pickup timing so the game ramps cleanly instead of spiking too early.</li>
-                      <li>Focused on small-system clarity: the logic is simple enough to review quickly, but complete enough to play.</li>
-                    </ul>
-                  </article>
-                </div>
+                <p><strong>Built with:</strong> JavaScript, Canvas rendering, collision logic, pickup systems, and local high-score persistence.</p>
                 <div class="project-links">
                   <a href="/games/dodge/" class="project-link">Play Live</a>
                   <a href="https://github.com/Hasanlm23123/Hasanlm23123.github.io/tree/main/games/dodge" class="project-link" target="_blank"
@@ -247,24 +193,7 @@
                   layered mechanics, and readable player feedback. It is a stronger demo of state management because
                   health, power-ups, asteroid pressure, and damage timing all have to stay in sync.
                 </p>
-                <div class="detail-grid">
-                  <article class="detail-card">
-                    <h4>What It Demonstrates</h4>
-                    <ul class="detail-list">
-                      <li>Responsive game-loop control with health, pickups, and wave progression.</li>
-                      <li>Difficulty pacing through asteroid density, damage states, and level scaling.</li>
-                      <li>Cleaner player-facing feedback through hull state, rapid fire, and restart flow.</li>
-                    </ul>
-                  </article>
-                  <article class="detail-card">
-                    <h4>Challenges + Learnings</h4>
-                    <ul class="detail-list">
-                      <li>Reworked the original game logic so multiple systems can overlap without breaking input timing.</li>
-                      <li>Tuned the damage and recovery windows to keep the game hard but readable.</li>
-                      <li>Used the browser rebuild to make the project easier to test, share, and review live.</li>
-                    </ul>
-                  </article>
-                </div>
+                <p><strong>Built with:</strong> JavaScript, layered game-state logic, power-up systems, pacing control, and player feedback tuning.</p>
                 <div class="project-links">
                   <a href="/games/space-shooter/" class="project-link">Play Live</a>
                   <a href="https://github.com/Hasanlm23123/Hasanlm23123.github.io/tree/main/games/space-shooter" class="project-link" target="_blank"
@@ -278,47 +207,33 @@
 
       <section class="section panel" id="about">
         <div class="section-heading">
-          <p class="section-kicker">About + Technical Context</p>
-          <h2>Enough context for a recruiter to place the work, and enough build detail for an engineer to review it seriously.</h2>
+          <p class="section-kicker">About</p>
+          <h2>Full-stack, AI, and interactive work built across Java, JavaScript, SQL, and cloud tooling.</h2>
         </div>
 
         <div class="about-grid">
           <article class="about-card">
-            <h3>Who I Am</h3>
+            <h3>About Me</h3>
             <p>
-              Labib Hasan is a Virginia Tech computer science student targeting software engineering internships and
-              early-career product engineering roles. The strongest work here leans full stack, but the consistent theme
-              is building software that people can open, test, and understand quickly.
+              I am a Virginia Tech computer science student interested in full-stack development, AI applications,
+              backend systems, and interactive user experiences.
             </p>
             <ul class="strength-list">
-              <li>Interested in full-stack, frontend-heavy, and product-facing software engineering work.</li>
-              <li>Prefers projects that pair clear user interaction with readable implementation.</li>
-              <li>Built this site so recruiters can find the essentials fast and engineers can still inspect the details.</li>
+              <li>Most of my work is centered on deployed apps, browser interaction, and product-focused features.</li>
+              <li>I like projects that combine backend logic with clear, usable interfaces.</li>
             </ul>
           </article>
 
           <article class="about-card">
-            <h3>RoleReady AI Architecture</h3>
+            <h3>What I Build</h3>
             <p>
-              The AI product is the best technical review entry point because it moves through upload, serverless processing,
-              model output, streaming UI, and final report rendering in one deployed workflow.
+              My projects usually sit somewhere between product engineering and systems work: real data flow, actual
+              interaction, and enough complexity to feel like software people can use.
             </p>
             <ul class="strength-list">
-              <li>Browser form accepts pasted resume content, uploaded PDF resumes, and imported job links.</li>
-              <li>Serverless routes parse inputs, shape prompts, and keep the provider key off the client.</li>
-              <li>Structured results feed streamed analysis, role comparison, export, and saved-history features.</li>
-            </ul>
-          </article>
-
-          <article class="about-card">
-            <h3>Challenges + Learnings</h3>
-            <p>
-              The most useful debugging work happened around data quality and deployment constraints, not just visual polish.
-            </p>
-            <ul class="strength-list">
-              <li>Improved AI output by tightening prompt rules and normalizing weak model responses before they hit the UI.</li>
-              <li>Handled PDF parsing edge cases and static-hosting limitations while keeping the app reviewable in public.</li>
-              <li>Rebuilt desktop game prototypes for the browser so reviewers could judge the product itself instead of setup steps.</li>
+              <li>Full-stack web apps with APIs, uploads, auth flows, and deployment.</li>
+              <li>AI products with structured output, streamed UI, and production-style workflows.</li>
+              <li>Interactive browser projects with game logic, state management, and clean feedback loops.</li>
             </ul>
           </article>
 
@@ -349,11 +264,7 @@
       <section class="contact-strip" id="contact">
         <div class="contact-copy">
           <p class="section-kicker light">Contact</p>
-          <h2>Reach out if you want to talk through the projects, implementation details, or software engineering opportunities.</h2>
-          <p>
-            Email is the fastest path. Resume, GitHub, and LinkedIn are included here so the portfolio can double as a
-            recruiter handoff page when needed.
-          </p>
+          <h2>Get in touch.</h2>
         </div>
 
         <div class="contact-actions">
@@ -367,7 +278,7 @@
     </main>
 
     <footer class="footer">
-      <p>© 2026 Labib Hasan. Built to help recruiters and engineers review live software quickly.</p>
+      <p>© 2026 Labib Hasan.</p>
     </footer>
   </div>
 
