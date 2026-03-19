@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/role-ready.js": {
+      "maxDuration": 20
+    }
+  }
+}
