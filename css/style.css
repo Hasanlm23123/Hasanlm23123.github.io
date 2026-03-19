@@ -572,6 +572,42 @@ h1 {
     margin: 0 0 18px;
 }
 
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin: 8px 0 18px;
+}
+
+.detail-card {
+    padding: 16px 18px;
+    border-radius: 22px;
+    border: 1px solid rgba(18, 38, 58, 0.08);
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.detail-card h4 {
+    margin: 0 0 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.detail-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--text);
+}
+
+.detail-list li {
+    margin-bottom: 10px;
+    line-height: 1.65;
+}
+
+.detail-list li:last-child {
+    margin-bottom: 0;
+}
+
 .project-links {
     display: flex;
     flex-wrap: wrap;
@@ -586,7 +622,7 @@ h1 {
 
 .about-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 16px;
 }
 
