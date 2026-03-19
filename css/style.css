@@ -381,6 +381,34 @@ h1 {
     margin: 12px 0 0;
 }
 
+.profile-signals {
+    display: grid;
+    gap: 12px;
+}
+
+.profile-signal {
+    padding: 16px 18px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.profile-signal-label {
+    display: inline-flex;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.profile-signal p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+}
+
 .profile-meta {
     display: flex;
     flex-direction: column;
